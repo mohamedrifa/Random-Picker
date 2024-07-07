@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:background="@drawable/rock"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/head"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="348dp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="700dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:src="@drawable/edit_bar"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewRandomPersons"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/kronaone"
+            android:text=""
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinnerPickCount"
+        android:layout_width="196dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:entries="@array/pick_count_options"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:layout_width="196dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttonPickRandom"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kronaone"
+        android:text="@string/pick_random"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/MemberSettings"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="MemberSettings"
+        android:text="@string/member_settings"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+</LinearLayout>
