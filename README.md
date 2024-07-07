@@ -1,0 +1,1 @@
+This is an Android Application which is used to pick a random person from the names which are already stored by the user and also they can be modified or changed. it is a simple mobile application but I learned something new at the beginer level
